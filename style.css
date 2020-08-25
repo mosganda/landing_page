@@ -1,0 +1,127 @@
+#header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 10px;
+   
+  }
+    
+  nav-bar{
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    }
+  .nav-link {
+    float: right;
+    padding-top: 20px;
+    margin-right: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #00ee00;
+  }
+  #header-img {
+    float: left;
+    width: 50%;
+    padding-top: 20px;
+   font-size: 25px;
+    color: red;
+  }
+  
+  
+  #form {
+    text-align: center;
+    height: 200px;
+    margin-top: 100px
+  }
+  #p1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  #email {
+    padding: 5px;
+    
+  }
+  #submit {
+    background-color: orange;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px;
+      
+  }
+  #submit:hover {
+    background-color: yellow;
+  }
+  #features {
+    width: 100%;
+    position: relative;
+    left: 100px;
+  }
+  
+  #video {
+    max-width: 100%;
+    display: block;
+    margin: 100px auto;
+    height: auto;
+  }
+  #pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    padding: 20px;
+    }
+  #A {
+    width: 30%;
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #B {
+    width: 30%;
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #C {
+    width: 30%;
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .amount {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .select {
+    background-color: orange;
+    font-size: 15px;
+    padding: 10px;
+  }
+  .select:hover {
+    background-color: yellow;
+  }
+  @media (max-width: 500px) {
+    #pricing {
+      display: block;
+    }
+  }
+  
+  .footer {
+    background-color: #edeeee;
+  }
+  .footer-content{
+    float: right;
+    color: red;
+    
+  }
+  
+  
