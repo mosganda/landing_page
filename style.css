@@ -1,9 +1,13 @@
+*{
+    box-sizing: border-box;
+}
 #header{
     position: fixed;
     top: 0;
     width: 100%;
     background-color: black;
     padding-bottom: 10px;
+    margin-bottom: 20px;
    
   }
     
