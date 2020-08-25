@@ -7,7 +7,7 @@
     width: 100%;
     background-color: black;
     padding-bottom: 10px;
-    margin-bottom: 20px;
+   
    
   }
     
@@ -37,11 +37,12 @@
   #form {
     text-align: center;
     height: 200px;
-    margin-top: 100px
+    margin-top: 200px
   }
   #p1 {
     font-size: 30px;
     font-weight: bold;
+    
   }
   #email {
     padding: 5px;
@@ -80,7 +81,7 @@
   #A {
     width: 30%;
     border: 1px solid black;
-    padding: 5px;
+    padding: 5px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,7 +89,7 @@
   #B {
     width: 30%;
     border: 1px solid black;
-    padding: 5px;
+    padding: 5px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,7 +97,7 @@
   #C {
     width: 30%;
     border: 1px solid black;
-    padding: 5px;
+    padding: 5px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
