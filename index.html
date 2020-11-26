@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel ="stylesheet" type = "text/css" href ="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+<link rel ="stylesheet" href="style.css">
 </head>
-
 <body>
-<header id="header">
-    <div id ="header-img"><i>KITCHEN TOOLS</i></div>
-  <nav id="nav-bar">
-    <a class="nav-link" href="#features">Features</a>
-    <a class="nav-link" href="#howitworks">How it works</a>
-    <a class="nav-link" href="#pricing">Pricing</a>
-    </na>
-  
-</header>
-
-<form id="form" action=" https://www.bikonnet.com/email-submit">
+  <ul class="topnav">
+    <li><a class="active" href="#home"><img src="image/kit.png"style="width:30px;height:30px"alt=""></a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#howitworks">How it works</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li class="icon">
+      <a href="javascript:void(0);" style="font-size:15px;" onclick="kitchen()">&#9776;</a>
+    </li>
+  </ul>
+  <form id="form" action=" https://www.bikonnet.com/email-submit">
   
   <p id="p1">Original Kitchen Equipment</p>
   <label for="email"><b>Email:</b></label>
@@ -85,8 +83,11 @@
 </div>
 </footer>
 
-</body>
-</html>
-    
+
+  <script>
+    function kitchen() {
+        document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+    }
+    </script>
 </body>
 </html>

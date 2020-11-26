@@ -1,144 +1,170 @@
-*{
-    box-sizing: border-box;
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #b0171f;
 }
-#header{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: black;
-    padding-bottom: 10px;
-   
-   
-  }
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #111;}
+
+ul.topnav li.icon {display: none;}
+
+#form {
+  text-align: center;
+  height: 200px;
+  margin-top: 80px;
+}
+#p1 {
+  font-size: 30px;
+  font-weight: bold;
+  
+}
+#email {
+  padding: 5px;
+  
+}
+#submit {
+  background-color: orange;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px;
     
-  nav-bar{
-    width: 100%;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    }
-  .nav-link {
+}
+#submit:hover {
+  background-color: yellow;
+}
+#features {
+  width: 100%;
+  position: relative;
+  left: 100px;
+}
+
+#video {
+  max-width: 100%;
+  display: block;
+  margin: 100px auto;
+  height: auto;
+}
+#pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  padding: 20px;
+  }
+#A {
+  width: 30%;
+  border: 1px solid red;
+  padding: 5px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#B {
+  width: 30%;
+  border: 1px solid red;
+  padding: 5px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#C {
+  width: 30%;
+  border: 1px solid red;
+  padding: 5px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.amount {
+  font-weight: bold;
+  font-size: 20px;
+}
+.select {
+  background-color: orange;
+  font-size: 15px;
+  padding: 10px;
+}
+.select:hover {
+  background-color: yellow;
+}
+.footer-content {
+  float: none;
+  text-align: left;
+}
+
+
+.footer {
+background-color: #edeeee;
+}
+.footer-content{
+float: right;
+color: red;
+margin-right: 100px;
+
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
     float: right;
-    padding-top: 20px;
-    margin-right: 50px;
-    font-size: 20px;
-    text-decoration: none;
-    color: #00ee00;
+    display: inline-block;
   }
-  #header-img {
-    float: left;
-    width: 50%;
-    padding-top: 20px;
-   font-size: 25px;
-    color: red;
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
-  
-  
-  #form {
-    text-align: center;
-    height: 200px;
-    margin-top: 200px
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
   }
-  #p1 {
-    font-size: 30px;
-    font-weight: bold;
-    
-  }
-  #email {
-    padding: 5px;
-    
-  }
-  #submit {
-    background-color: orange;
-    margin-top: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 5px;
-      
-  }
-  #submit:hover {
-    background-color: yellow;
-  }
-  #features {
-    width: 100%;
-    position: relative;
-    left: 100px;
-  }
-  
-  #video {
-    max-width: 100%;
+  ul.topnav.responsive li a {
     display: block;
-    margin: 100px auto;
-    height: auto;
+    text-align: left;
   }
+}
+@media screen and (max-width: 500px) {
   #pricing {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 90%;
-    padding: 20px;
-    }
-  #A {
-    width: 30%;
-    border: 1px solid red;
-    padding: 5px 15px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    display: block;
   }
-  #B {
-    width: 30%;
-    border: 1px solid red;
-    padding: 5px 15px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  #A, #B, #C {
+    width: 50%;
+      border:none;
+  }
+  #A {
+    background-color:#e0eee0;
   }
   #C {
-    width: 30%;
-    border: 1px solid red;
-    padding: 5px 15px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #e0eee0;
   }
-  .amount {
-    font-weight: bold;
-    font-size: 20px;
+  #features{
+      width: 100%;
+     position: relative;
+      left: 0;
   }
-  .select {
-    background-color: orange;
-    font-size: 15px;
-    padding: 10px;
+.footer-content {
+      float: none;
+      text-align: left;
   }
-  .select:hover {
-    background-color: yellow;
-  }
-  @media (max-width: 500px) {
-    #pricing {
-      display: block;
-    }
-    #A, #B, #C {
-        width: 100%;
-    }
-    #features{
-        width: 100%;
-        position: relative;
-        left: 0;
-    }
-  .footer-content {
-        float: none;
-        text-align: left;
-    }
-  }
-  
-  .footer {
-    background-color: #edeeee;
-  }
-  .footer-content{
-    float: right;
-    color: red;
-    
-  }
-  
-  
+}
